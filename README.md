@@ -1,4 +1,4 @@
-# UplianceAssignment
+# Adnan Upliance Assignment
 ![UPLIANCE.AI Logo](https://raw.githubusercontent.com/adnanalam8360/UplianceAssignment/refs/heads/main/upliance_image.webp)
 
 ## OVERVIEW:- This SQL and Python workflow represents a robust data analysis pipeline for evaluating user behaviors, dish preferences, and other operational metrics for Upliance.AI, a cooking session and meal-ordering platform.
