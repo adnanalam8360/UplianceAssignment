@@ -1,6 +1,32 @@
 # UplianceAssignment
 ![UPLIANCE.AI Logo](https://raw.githubusercontent.com/adnanalam8360/UplianceAssignment/refs/heads/main/upliance_image.webp)
 
+## OVERVIEW:- This SQL and Python workflow represents a robust data analysis pipeline for evaluating user behaviors, dish preferences, and other operational metrics for Upliance.AI, a cooking session and meal-ordering platform.
+
+## SQL Analysis
+## Data Cleaning:
+Checked for missing values in OrderDetails, CookingSessions, and UserDetails tables.
+Observed that only the Rating column in OrderDetails has missing values, justified by the canceled orders.
+
+## Data Integration:
+Joined CookingSessions, OrderDetails, and UserDetails to create a comprehensive combined_data table.
+
+## Insights Derived:
+
+Meal Analysis:
+Breakfast: Avg. order per user = 1, Avg. spend = $7.8.
+Dinner: Avg. order per user = 1, Avg. spend = $15.6.
+Popular Dishes:
+Spaghetti is the most popular dish (ordered 4 times).
+Pancakes dominate breakfast, Caesar Salad for lunch, and Spaghetti for dinner.
+Demographic Preferences:
+New York has diverse preferences, while cities like Austin favor specific dishes like Grilled Chicken.
+Age group preferences vary from Pancakes for 41-45 to Spaghetti for 26-30.
+Operational Metrics:
+Avg. orders per cooking session = 1.
+Repeat Customers:
+Alice Johnson, Bob Smith, and Charlie Lee are the most frequent customers.
+
 select 
     'OrderDetails' as table_name, 
     count(case when "order id" is null then 1 end) as missing_order_id,
@@ -264,6 +290,20 @@ FROM (
 ) AS SubQuery;
 On average **one** order is placed each session
 
+
+## Python Analysis
+## Data Verification:
+Confirmed no missing values in CookingSessions and UserDetails.
+Verified missing ratings in OrderDetails for canceled orders.
+
+## Data Merging:
+Merged all three tables using Pandas, creating a consolidated dataset.
+Explored customer and session-level insights with merged data.
+
+## Visualizations (if applicable):
+
+Potentially used Seaborn and Matplotlib to visualize trends such as dish popularity, user spending, and age group preferences.
+
 Python
 import pandas as pd
 from IPython.display import display
@@ -503,5 +543,23 @@ plt.title("Order Count by Age Group")
 plt.xlabel("Age")
 plt.ylabel("Order Count")
 plt.xticks(rotation=45)
+
+
+
+## Actionable Insights
+## Menu Optimization:
+Focus on popular dishes like Spaghetti and Caesar Salad.
+Promote dishes based on regional preferences.
+
+## Customer Retention:
+Target frequent customers with loyalty programs or exclusive offers.
+Operational Efficiency:
+Ensure session-to-order ratios are maintained at 1:1 or improved.
+
+## Market Segmentation:
+Create tailored campaigns for age groups and regional preferences.
+
+## Trend Monitoring:
+Continuously monitor order trends to adapt to changing preferences.
 plt.show()
 No description has been provided for this image
