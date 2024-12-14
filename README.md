@@ -1,5 +1,5 @@
 # UplianceAssignment
-![UPLIANCE.AI Logo]([https://raw.githubusercontent.com/adnanalam8360/Netflix/refs/heads/main/Netflix-logo.webp](https://raw.githubusercontent.com/adnanalam8360/UplianceAssignment/refs/heads/main/upliance_image.webp))
+![UPLIANCE.AI Logo]((https://raw.githubusercontent.com/adnanalam8360/UplianceAssignment/refs/heads/main/upliance_image.webp))
 
 select 
     'OrderDetails' as table_name, 
